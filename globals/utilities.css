@@ -87,11 +87,15 @@
   }
 }
 
-.cta {
-  &.cta-focused {
-    a {
-      background-color: var(--color-black--001);
-      color: var(--color-white--001);
-    }
+.focus {
+  .focus-item {
+    border: calc(var(--border-size) * 2) solid var(--color-black--004);
+    background-color: transparent;
+    color: var(--color-black--001);
+    min-height: calc(100% - (var(--border-size) * 4));
   }
+}
+
+.no-bullets {
+  list-style: "";
 }
