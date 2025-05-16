@@ -33,6 +33,17 @@ select {
   min-width: 0;
 }
 
+input,
+textarea {
+  &:focus,
+  &:focus-visible,
+  &:focus-within {
+    &::placeholder {
+      color: transparent;
+    }
+  }
+}
+
 textarea {
   min-width: 100%;
   min-height: 10rem;
